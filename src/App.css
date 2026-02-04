@@ -6,6 +6,11 @@ html, body {
   overflow-x: hidden;   /* prevent horizontal scroll */
 }
 
+/* Add space for fixed header */
+main {
+  padding-top: 1000px;  /* Adjust this value to match your header height */
+}
+
 /* Card styling */
 .card {
   padding: 2rem;

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Header from './header'   // <-- NOTE: capital H
+import Header from './header'
 import './App.css'
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Header />
-      <main style={{ padding: '2rem' }}>
+      <main style={{ padding: '2rem', paddingTop: '100px' }}>  {/* Added paddingTop here */}
         <div className="card">
           <button onClick={() => setCount((count) => count + 1)}>
             count is {count}
@@ -20,7 +20,7 @@ function App() {
         <p className="read-the-docs">
           Interested in matching with a club? Welcome to the right place!
         </p>
-        <div style={{ height: '1000px' }}></div> {/* just to scroll */}
+        <div style={{ height: '1000px' }}></div>
       </main>
     </>
   )
